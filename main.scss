@@ -1,0 +1,139 @@
+@use 'normalize.css';
+
+body {
+  height: 100vh;
+  text-align: center;
+  font-family: "liberation sans";
+}
+
+nav {
+  display: flex;
+
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    li {
+      list-style-type: none;
+      padding-left: 15px;
+
+      img {
+        width: 16px;
+        opacity: 0.55;
+        vertical-align: text-bottom;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      button {
+        background: linear-gradient(rgb(67, 135, 253), rgb(70, 131, 234));
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        border: 1px solid #4285f4;
+        padding: 5px 10px;
+        border-radius: 2px;
+        vertical-align: text-bottom;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0, 0.87);
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+        opacity: 0.85;
+        text-align: right;
+      }
+    }
+  }
+}
+
+div.main {
+  padding-top: 10rem;
+  img {
+    height: 100%;
+  }
+  #searchbar {
+    display: flex;
+    justify-content: center;
+
+    img {
+      transform: translate(2.5rem, 1.65rem);
+      opacity: 0.6;
+    }
+
+    input {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      padding: 10px 3rem;
+      width: 30rem;
+      border-radius: 19px;
+      border: 1px solid #0000001a;
+
+      &:focus,
+      &:hover {
+        box-shadow: 0 1px 5px #0000001a;
+      }
+    }
+  }
+
+  button {
+    background: linear-gradient(top, #f8f9fa, #f8f9fa);
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 1rem;
+    margin: 0 4px;
+
+    &:hover {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #dadce0;
+      color: #202124;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #f2f2f2;
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+    li {
+      list-style-type: none;
+      padding-left: 27px;
+
+      a {
+        font-family: Arial, sans-serif;
+        text-decoration: none;
+        color: #70757a;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+ul.right {
+  justify-content: flex-end;
+}
+
+ul.mr {
+  margin-right: 27px;
+}
