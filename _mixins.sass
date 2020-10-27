@@ -1,0 +1,24 @@
+=prefix ($prop, $val...)
+	-webkit-#{$prop}: #{$val}
+	-moz-#{$prop}: #{$val}
+	-ms-#{$prop}: #{$val}
+	#{$prop}: #{$val}
+
+=before-background($height, $width, $before)
+	height: $height
+	display: inline-block
+	width: $width
+	position: relative
+	z-index: 1
+
+	&:before
+		content: ''
+		display: block
+		height: $height
+		position: absolute
+		top: 0px
+		width: $width
+		z-index: -1
+		background-image: $before
+		background-size: contain
+		left: 0px
