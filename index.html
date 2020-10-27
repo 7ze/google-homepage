@@ -12,43 +12,43 @@
     <title>Google</title>
   </head>
   <body>
-    <nav>
-      <ul class="left">
-        <li><a href="">About</a></li>
-        <li><a href="">Store</a></li>
+    <nav class="nav">
+      <ul class="nav_links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
       </ul>
-      <ul class="right">
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
+      <ul class="nav_links">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
         <li>
-          <a href=""><img src="assets/img/menu.png" alt="menu" /></a>
+          <a href="#"><span id="menu"></span></a>
         </li>
-        <li><button>Sign In</button></li>
+        <li><button class="sign-in">Sign In</button></li>
       </ul>
     </nav>
     <div class="main">
       <img id="logo" src="assets/img/google_logo.svg" alt="Google Logo" />
-      <form action="/search.html">
+      <form class="search-box" action="#">
         <div id="searchbar">
-          <img width="20px" src="assets/img/search_icon.svg" alt="search" />
+          <span id="search-icon"></span>
           <input type="text" />
         </div>
         <div>
-          <button>Google Search</button>
+          <button type="submit">Google Search</button>
           <button>I'm Feeling Lucky</button>
         </div>
       </form>
     </div>
-    <footer>
-      <ul class="left">
-        <li><a href="">Advertising</a></li>
-        <li><a href="">Business</a></li>
-        <li><a href="">How Search works</a></li>
+    <footer class="footer">
+      <ul class="footer_links">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search works</a></li>
       </ul>
-      <ul class="right mr">
-        <li><a href="">Privacy</a></li>
-        <li><a href="">Terms</a></li>
-        <li><a href="">Settings</a></li>
+      <ul class="footer_links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
       </ul>
     </footer>
   </body>
