@@ -42,6 +42,12 @@ span#menu
 	&_links
 		margin-top: 20px
 
+	+media('<=tablet')
+		&_links:nth-child(1)
+			display: none
+		justify-content: flex-end
+		
+
 	button.sign-in
 		background: linear-gradient(rgb(67, 135, 253), rgb(70, 131, 234))
 		color: #ffffff
@@ -60,6 +66,9 @@ div.main
 	flex-direction: column
 	align-items: center
 	justify-content: center
+	
+	+media('<=tablet')
+		height: 70%
 
 	form.search-box
 		text-align: center
@@ -80,6 +89,12 @@ div.main
 		border-radius: 244px
 		border: 1px solid #0000001a
 
+		+media('<650px')
+			width: 30rem
+
+		+media('<550px')
+			width: auto	
+
 		&:hover
 			box-shadow: 0 1px 15px #0000001a
 
@@ -92,6 +107,7 @@ div.main
 		color: #5f6368
 		padding: 0 1rem
 		margin: 0 4px
+		cursor: pointer
 
 		&:hover
 			box-shadow: 0 1px 1px #0000001a
@@ -113,3 +129,9 @@ footer.footer
 
 		&:hover
 			color: #333333
+
+	+media('<=tablet')
+		display: block
+		
+		ul.footer_links
+			justify-content: center

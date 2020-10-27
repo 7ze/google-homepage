@@ -134,6 +134,14 @@ span#menu::before {
 .nav_links {
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .nav {
+    justify-content: flex-end;
+  }
+  .nav_links:nth-child(1) {
+    display: none;
+  }
+}
 .nav button.sign-in {
   background: linear-gradient(#4387fd, #4683ea);
   color: #ffffff;
@@ -153,6 +161,11 @@ div.main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  div.main {
+    height: 70%;
+  }
 }
 div.main form.search-box {
   text-align: center;
@@ -189,6 +202,16 @@ div.main input {
   border-radius: 244px;
   border: 1px solid #0000001a;
 }
+@media (max-width: 649px) {
+  div.main input {
+    width: 30rem;
+  }
+}
+@media (max-width: 549px) {
+  div.main input {
+    width: auto;
+  }
+}
 div.main input:hover {
   box-shadow: 0 1px 15px #0000001a;
 }
@@ -201,6 +224,7 @@ div.main button {
   color: #5f6368;
   padding: 0 1rem;
   margin: 0 4px;
+  cursor: pointer;
 }
 div.main button:hover {
   box-shadow: 0 1px 1px #0000001a;
@@ -223,6 +247,14 @@ footer.footer a {
 }
 footer.footer a:hover {
   color: #333333;
+}
+@media (max-width: 768px) {
+  footer.footer {
+    display: block;
+  }
+  footer.footer ul.footer_links {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
